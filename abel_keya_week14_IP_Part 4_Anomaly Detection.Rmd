@@ -1,0 +1,220 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+# Anomaly Detection 
+
+
+```{r}
+install.packages("backports")
+```
+
+```{r}
+# Installing anomalize package
+# ---
+# 
+#install.packages("anomalize")
+```
+
+```{r}
+#2. Reading the Data
+
+# Install the following packages:
+install.packages("foreign")
+library(foreign)
+install.packages("car")
+install.packages("Hmisc")
+install.packages("reshape")
+```
+
+```{r}
+install.packages("lubridate")
+install.packages("tidyr")
+library(tidyr)
+library(lubridate)
+```
+
+
+
+```{r}
+#install.packages("anomalize")
+devtools::install_github("tidyverse/tidyverse")
+```
+
+```{r}
+ devtools::install_github("business-science/anomalize")
+```
+
+
+```{r}
+library(anomalize) #tidy anomaly detectiom
+library(tidyverse) #tidyverse packages like dplyr, ggplot, tidyr
+library(coindeskr) #bitcoin price extraction from coindesk
+```
+
+
+```{r}
+neededPackages = c("devtools", "Rcpp", "ggplot2")
+for (i in 1:length(neededPackages)) {
+    ifelse(!neededPackages[i] %in% installed.packages(), install.packages(neededPackages[i]), 
+    print(paste(neededPackages[i], "is already installed.")))
+}
+```
+
+
+```{r}
+library(devtools)
+```
+
+```{r}
+library(AnomalyDetection)
+```
+
+
+Prepare the data for the AnomalyDetection package by keeping only the date and page views and discard all other variables. The input must be a series of pairs. Check the structure of the higginsWikipedia dataframe. The date column must be in POSIXct format.
+```{r}
+columns_to_keep=c("Date","Sales")
+Sales_Forecasting=Sales_Forecasting[,columns_to_keep]
+str(Sales_Forecasting)
+```
+AnomalyDetection Method
+Apply anomaly detection and plot the results.
+```{r}
+AnomalyDetectionSales_Forecasting = AnomalyDetectionTs(Sales_Forecasting, direction="pos", plot=TRUE, title = "Anomaly Detection")
+AnomalyDetectionSales_Forecasting$plot
+```
+
+Look at the dates the anomalies occured.
+```{r}
+#Look at the dates the anomalies occured.
+AnomalyDetectionHiggins$anoms$timestamp
+```
+```{r}
+#devtools::install_github("business-science/anomalize")
+```
+
+
+```{r}
+#install.packages('anomalize')
+#Update from github
+#library(devtools)
+#install_github("business-science/anomalize")
+#Load the package
+library(anomalize)
+library(tidyverse)
+```
+```{r}
+rstudioapi::getThemeInfo()
+```
+
+```{r}
+# install.packages("remotes")
+remotes::install_github("r-lib/rlang")
+```
+
+```{r}
+#install.packages("rlang")
+```
+
+```{r}
+sessionInfo()
+```
+```{r}
+#install.packages("tidyquant")
+#install.packages("timetk")
+#install.packages("knitr")
+```
+
+
+```{r}
+#install.packages("timetk")
+```
+
+
+```{r}
+library(tidyquant)  # Used for business-ready ggplot themes
+library(anomalize)  # Identify and clean time series anomalies
+library(knitr)      # For kable() function
+```
+
+
+```{r}
+rlang::last_error()
+```
+
+```{r}
+install.packages("tsibble")
+```
+
+```{r}
+library(tsibble)
+```
+
+
+```{r}
+
+# Grouping by server and converting to tibbletime
+Sales_Forecasting <- read_csv("Supermarket_Sales_Forecasting.csv") %>%
+  group_by(Sales)
+ 
+
+Sales_Forecasting
+```
+
+```{r}
+Sales_Forecasting$Date<- as.Date(Sales_Forecasting$Date)
+str(Sales_Forecasting$Date)
+```
+
+
+```{r}
+library(dplyr)
+library(tibbletime)
+```
+```{r}
+prep_tbl_time(Sales_Forecasting)
+```
+
+
+```{r}
+data_tbl <- tibble(
+    date  = seq.Date(from = as.Date("0001-05-20"), by = "day", length.out = 10),
+    value = rnorm(10)
+    )
+
+prep_tbl_time(data_tbl)
+#as_tbl_time(logs)
+#prep_tbl_time(logs)
+```
+
+```{r}
+Sales_Forecasting %>%
+    ggplot(aes(Date, Sales)) +
+    geom_point(color = "#2c3e50", alpha = 0.25) +
+    facet_wrap(~ Sales, scale = "free_y", ncol = 1) +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
+    labs(title = "Sales data plot",
+         subtitle = "Grouping by Sales")
+```
+
+```{r}
+Sales_Forecasting %>%
+    time_decompose(Sales) %>%
+    anomalize(remainder) %>%
+    time_recompose() %>%
+    plot_anomalies(time_recomposed = TRUE, ncol = 2, alpha_dots = 0.5)
+```
+
+```{r}
+Sales_Forecasting<-as.data.frame(Sales_Forecasting$Sales)
+Sales_Forecasting
+```
+Plot the data using ggplot2. Set the x-axis to the Date and the y-axis to the number of views.
+```{r}
+library(ggplot2)
+ggplot(Sales_Forecasting, aes(x=Date, y=Sales, color=Sales)) + 
+  geom_line()
+```
+
+
