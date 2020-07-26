@@ -4,14 +4,21 @@ Supervised_and_Unsupervised_with_R
 
 # Problem Statement:
 
-1.Dataset 1
+Part 1: Dimensionality Reduction
 
-perform supervised learning in R programming language on the advertising dataset to identify which individuals are most likely to click on ads.
+To reduce the dataset to a low dimensional dataset using the t-SNE algorithm or PCA and perform analysis to provide insights gained.
 
-2.Dataset 2
+Part 2: Feature Selection
 
-Perform clustering stating insights drawn from your analysis and visualizations.
-Upon implementation, provide comparisons between the approaches  i.e. K-Means clustering vs Hierarchical clustering highlighting the strengths and limitations of each approach in the context of analysis. 
+To perform feature selection through the use of the unsupervised learning methods and analysis the features that contribute the most information to the dataset.
+
+Part 3: Association Rules
+
+create association rules that will allow  to identify relationships between variables in the dataset and provide insights for the analysis.
+
+Part 4: Anomaly Detection
+
+To check whether there are any anomalies in the given sales dataset for  fraud detection.
 
 <img src="dbscan.png" width="400"><img src="kmeans.gif" width="400">
 
