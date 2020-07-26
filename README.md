@@ -20,7 +20,7 @@ Part 4: Anomaly Detection
 
 To check whether there are any anomalies in the given sales dataset for  fraud detection.
 
-<img src="dbscan.png" width="400"><img src="kmeans.gif" width="400">
+<img src="dbscan.png" width="400"><img src="shoppingtrolley.gif" width="400">
 
 
 ## Data sources
