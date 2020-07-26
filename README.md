@@ -38,7 +38,7 @@ Part 4:[Supermarket_Sales_Forecasting](https://github.com/abel-keya/Abel_Keya_DS
 
 # Description
 
-In this project, 2 datasets are provided. It is required to:
+In this project, 3 datasets are provided. It is required to:
 
 (i)Problem Definition
 
