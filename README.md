@@ -76,8 +76,11 @@ Dataset
 The dataset files for part 1, 2, 3 and 4 can be found below:
 
 Part 1 and 2: Dataset [Link (Links to an external site.)].
+
 Part 3: Dataset [Link (Links to an external site.)].
+
 Part 4: Dataset [Link (Links to an external site.)].
+
 # Requirements
 
 * Anaconda installation
