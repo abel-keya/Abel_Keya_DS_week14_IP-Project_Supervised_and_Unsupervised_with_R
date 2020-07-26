@@ -21,7 +21,7 @@ Upon implementation, provide comparisons between the approaches  i.e. K-Means cl
 This project involves the data wrangling work for Data using R programming language.
 
     
-[Dataset1](https://github.com/abel-keya/Data-Wrangling-with-R/blob/master/advertising.csv)
+[Dataset1](https://github.com/abel-keya/Abel_Keya_DS_week14_IP-Project_Supervised_and_Unsupervised_with_R/blob/master/Supermarket_Dataset_1.csv)
 
 [Dataset2](http://bit.ly/EcommerceCustomersDataset)
 
@@ -75,7 +75,7 @@ Dataset
 
 The dataset files for part 1, 2, 3 and 4 can be found below:
 
-Part 1 and 2:[Links to an external site1](https://github.com/abel-keya/Data-Wrangling-with-R/blob/master/advertising.csv)
+Part 1 and 2:[Links to an external site1](https://github.com/abel-keya/Abel_Keya_DS_week14_IP-Project_Supervised_and_Unsupervised_with_R/blob/master/Supermarket_Dataset_1.csv)
 
 Part 3:[Links to an external site2](https://github.com/abel-keya/Data-Wrangling-with-R/blob/master/advertising.csv)
 
