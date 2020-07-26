@@ -53,20 +53,31 @@ The master dataset is analyzed using R data science language in the R Notebook
 
 # Context
 
-Part 1
+You are a Data analyst at Carrefour Kenya and are currently undertaking a project that will inform the marketing department on the most relevant marketing strategies that will result in the highest no. of sales (total price including tax). Your project has been divided into four parts where you'll explore a recent marketing dataset by performing various unsupervised learning techniques and later providing recommendations based on your insights.
 
-A Kenyan entrepreneur has created an online cryptography course and would want to advertise it on her blog. She currently targets audiences originating from various countries. In the past, she ran ads to advertise a related course on the same blog and collected data in the process. She would now like to employ your services as a Data Science Consultant to help her identify which individuals are most likely to click on her ads. 
+Part 1: Dimensionality Reduction
 
-Part 2
+This section of the project entails reducing your dataset to a low dimensional dataset using the t-SNE algorithm or PCA. You will be required to perform your analysis and provide insights gained from your analysis.
 
-This section of the assessment covers unsupervised learning with R. 
+Part 2: Feature Selection
 
-Kira Plastinina (Links to an external site.) is a Russian brand that is sold through a defunct chain of retail stores in Russia, Ukraine, Kazakhstan, Belarus, China, Philippines, and Armenia. The brand’s Sales and Marketing team would like to understand their customer’s behavior from data that they have collected over the past year. More specifically, they would like to learn the characteristics of customer groups.
+This section requires you to perform feature selection through the use of the unsupervised learning methods learned earlier this week. You will be required to perform your analysis and provide insights on the features that contribute the most information to the dataset.
 
-Perform clustering stating insights drawn from your analysis and visualizations.
-Upon implementation, provide comparisons between the approaches learned this week i.e. K-Means clustering vs Hierarchical clustering highlighting the strengths and limitations of each approach in the context of your analysis. 
-The findings should help inform the team in formulating the marketing and sales strategies of the brand. 
+Part 3: Association Rules
 
+This section will require that you create association rules that will allow you to identify relationships between variables in the dataset. You are provided with a separate dataset that comprises groups of items that will be associated with others. Just like in the other sections, you will also be required to provide insights for your analysis.
+
+Part 4: Anomaly Detection
+
+You have also been requested to check whether there are any anomalies in the given sales dataset. The objective of this task being fraud detection.
+
+Dataset
+
+The dataset files for part 1, 2, 3 and 4 can be found below:
+
+Part 1 and 2: Dataset [Link (Links to an external site.)].
+Part 3: Dataset [Link (Links to an external site.)].
+Part 4: Dataset [Link (Links to an external site.)].
 # Requirements
 
 * Anaconda installation
