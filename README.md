@@ -84,7 +84,7 @@ The findings should help inform the team in formulating the marketing and sales 
    
  <p align="center"> 
    
-  <img   src="R packages.jpg" width="650" height="400"  alt="DS" title="Requirements" />
+  <img   src="https://github.com/abel-keya/Abel_Keya_DS_week13_IP-Project_Supervised_and_Unsupervised_with_R/blob/master/rpackages.png" width="650" height="400"  alt="DS" title="Requirements" />
   
  
 </p>
